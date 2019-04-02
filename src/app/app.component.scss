@@ -1,0 +1,42 @@
+.contenedorPrincipal{
+  width: 100%;
+}
+div.igx-nav-drawer__overlay{
+  position: fixed;
+}
+
+header{
+  background-color: #F27254;
+  display: flex;
+}
+
+header div{
+  width: 100%;
+  text-align: justify;
+  padding: 4px;
+  margin-left: 8px;
+}
+header div p{
+  display: inline;
+  font-weight: 700;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+main{
+  padding: 8px;
+}
+
+main p{
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .content-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+}

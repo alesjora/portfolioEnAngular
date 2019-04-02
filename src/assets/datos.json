@@ -1,0 +1,55 @@
+{
+  "menu": [
+    { "name": "home", "text": "Inicio", "url":""},
+    { "name": "face", "text": "Sobre mí", "url":"sobre_mi"},
+    { "name": "done_all", "text": "Habilidades","url":"habilidades" },
+    { "name": "create", "text": "Proyectos","url":"proyectos" },
+    { "name": "contact_mail", "text": "Contacto","url":"contacto" }
+  ],
+  "trayectoria": [
+    { "titulo": "CFGM de Sistemas Microinformáticos y Redes.",
+      "subtitulo": "IES Vicente Núñez (2015 - 2017)",
+      "descripcion":"Aprendí sobre informática y redes, además de empezar a descubrir el mundo de la programación"
+    },
+    { "titulo": "Prácticas Mancomunidad Campiña Sur.",
+      "subtitulo": "Aguilar de la Frontera (Marzo 2017 - Junio 2017)",
+      "descripcion":"Desempeñé tareas sobre mantenimiento de redes y equipos a los distintos municipios integrantes."
+    },
+    { "titulo": "CFGS de Desarrollo de Aplicaciones Webs.",
+      "subtitulo": "IES Gran Capitán (2017 - 2019)",
+      "descripcion":"Me adentré en el mundo de la programación, aprendiendo lenguajes tanto de front-end como de back-end."
+    }
+  ],
+  "habilidades": [
+    { "habilidad": "HTML", "porcentaje": "90%", "clase":"skills p90"},
+    { "habilidad": "CSS", "porcentaje": "70%", "clase":"skills p70"},
+    { "habilidad": "JavaScript", "porcentaje": "60%", "clase":"skills p60"},
+    { "habilidad": "PHP", "porcentaje": "60%", "clase":"skills p60"},
+    { "habilidad": "Symfony", "porcentaje": "10%", "clase":"skills p10"},
+    { "habilidad": "SQL", "porcentaje": "70%", "clase":"skills p70"},
+    { "habilidad": "Android", "porcentaje": "60%", "clase":"skills p60"},
+    { "habilidad": "Java", "porcentaje": "60%", "clase":"skills p60"},
+    { "habilidad": "jQuery", "porcentaje": "30%", "clase":"skills p30"},
+    { "habilidad": "Angular", "porcentaje": "30%", "clase":"skills p30"}
+  ],
+  "proyectos": [
+    { "titulo": "Casas rurales",
+      "subtitulo": "Maquetación en HTML y CSS",
+      "rutaImagen": "assets/img/casasRurales.png",
+      "descripcion":"Proyecto para la asignatura Desarrollo de Interfaces Web donde realizamos la maquetación de un portal de casas rurales.",
+      "URL":"https://alesjora.github.io/DIW/practica12/"
+    },
+    { "titulo": "Gestor de tareas",
+      "subtitulo": "Maquetación en HTML y CSS",
+      "rutaImagen": "assets/img/gestorDeTareas.png",
+      "descripcion":"Proyecto para la asignatura Desarrollo de Interfaces Web donde realizamos la maquetación de un gestor de tareas.",
+      "URL":"https://alesjora.github.io/DIW/practica11/"
+    },
+    { "titulo": "Buscaminas",
+      "subtitulo": "Realizado en JavaScript y jQuery",
+      "rutaImagen": "assets/img/buscaminas.png",
+      "descripcion":"Ejercicio para la asignatura Desarrollo Web en Entorno Cliente donde realizamos un buscaminas de 3 niveles de dificultad.",
+      "URL":"https://alesjora.github.io/temas/tema6/buscaminasConJQuery/index.html"
+    }
+  ]
+}

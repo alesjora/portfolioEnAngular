@@ -1,0 +1,15 @@
+<section>
+  <div class="listProyects">
+    <ng-container *ngFor="let item of proyectos">
+      <a [href]="item.URL" target="_blank">
+          <app-card-proyect
+          [titulo]="item.titulo"
+          [subtitulo]="item.subtitulo"
+          [rutaImagen]="item.rutaImagen"
+          [descripcion]="item.descripcion"
+        >
+        </app-card-proyect>
+      </a>
+    </ng-container>
+  </div>
+</section>

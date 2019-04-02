@@ -1,0 +1,17 @@
+<section class="sobreMi">
+    <p>Mi nombre es José Rafael Álvarez Espino y soy un apasionado de la informática y las nuevas tecnologías.
+        Realizé el grado medio de sistemas microinformáticos y redes en el IES Vicente Nuñez y actualmente
+        estoy realizando el grado superior de desarrollo web en el IES Gran Capitán.</p>
+    <p>En mi tiempo libre, aparte de seguir formándome en el mundo de la informática, me gusta hacer deporte.
+        Además, desde pequeño me interesé por la astronomía, de la que intento aprender todo lo posible.</p>
+</section>
+<h5>Trayectoria</h5>
+<section class="trayectoria">
+  <ng-container *ngFor="let card of infoCards">
+    <app-card
+    [titulo]="card.titulo"
+    [subtitulo]="card.subtitulo"
+    [descripcion]="card.descripcion">
+    </app-card>
+  </ng-container>
+</section>

@@ -1,10 +1,28 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { PrincipalComponent } from './views/principal/principal.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent, data: { text: 'Home' }}
+  {
+    path: 'sobre_mi',
+    loadChildren: './views/sobre-mi/sobre-mi.module#SobreMiModule'
+  },
+  {
+    path: 'habilidades',
+    loadChildren: './views/habilidades/habilidades.module#HabilidadesModule'
+  },
+  {
+    path: 'proyectos',
+    loadChildren: './views/proyectos/proyectos.module#ProyectosModule'
+  },
+  {
+    path: '',
+    component: PrincipalComponent
+  },
+  {
+    path: '**',
+    redirectTo: ''
+  }
 ];
 
 @NgModule({

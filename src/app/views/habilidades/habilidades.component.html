@@ -1,0 +1,12 @@
+<section>
+  <div class="listSkills">
+    <ng-container *ngFor="let item of habilidades">
+      <app-progress-bar
+        [habilidad]="item.habilidad"
+        [porcentaje]="item.porcentaje"
+        [clase]="item.clase"
+      >
+      </app-progress-bar>
+    </ng-container>
+  </div>
+</section>
