@@ -1,0 +1,42 @@
+<p>Si necesitas contactor conmigo rellena el siguiente formulario.</p>
+<form class="example-form" [formGroup]="profileForm">
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Nombre" formControlName="nombre">
+    <mat-error *ngIf="nombre.hasError('required')">
+      El nombre es <strong>requerido.</strong>
+    </mat-error>
+  </mat-form-field><br>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" formControlName="email">
+    <mat-error *ngIf="email.hasError('required')">
+      El email es <strong>requerido.</strong>
+    </mat-error>
+    <mat-error *ngIf="email.hasError('email')">
+      El email introducido no es <strong>válido.</strong>
+    </mat-error>
+  </mat-form-field><br>
+
+  <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Mensaje" formControlName="mensaje"></textarea>
+      <mat-error *ngIf="mensaje.hasError('required')">
+        El mensaje es <strong>requerido.</strong>
+      </mat-error>
+    </mat-form-field><br>
+    <button [disabled]="profileForm.invalid" mat-raised-button color="primary">Enviar</button>
+</form>
+
+<!-- <form [formGroup]="profileForm">
+  
+  <label>
+    First Name:
+    <input type="text" formControlName="nombre">
+  </label>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="email">
+  </label>
+
+</form> -->

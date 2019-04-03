@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PrincipalComponent } from './views/principal/principal.component';
+import { ContactoModule } from './views/contacto/contacto.module';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'proyectos',
     loadChildren: './views/proyectos/proyectos.module#ProyectosModule'
+  },
+  {
+    path: 'contacto',
+    loadChildren: './views/contacto/contacto.module#ContactoModule'
   },
   {
     path: '',
